@@ -7,8 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD678B6224C05D4D00B94216 /* 3D.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6124C05D4C00B94216 /* 3D.png */; };
+		FD678B6324C05D4D00B94216 /* 3D.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6124C05D4C00B94216 /* 3D.png */; };
+		FD678B6424C05D4D00B94216 /* 3D.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6124C05D4C00B94216 /* 3D.png */; };
+		FD678B6624C05D5500B94216 /* Design.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6524C05D5500B94216 /* Design.png */; };
+		FD678B6724C05D5500B94216 /* Design.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6524C05D5500B94216 /* Design.png */; };
+		FD678B6824C05D5500B94216 /* Design.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6524C05D5500B94216 /* Design.png */; };
+		FD678B6A24C05DE600B94216 /* Print.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6924C05DE600B94216 /* Print.png */; };
+		FD678B6B24C05DE700B94216 /* Print.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6924C05DE600B94216 /* Print.png */; };
+		FD678B6C24C05DE700B94216 /* Print.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6924C05DE600B94216 /* Print.png */; };
+		FD678B6E24C06B1100B94216 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD678B6D24C06B1100B94216 /* SecondScreenViewController.swift */; };
+		FD678B6F24C06B1100B94216 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD678B6D24C06B1100B94216 /* SecondScreenViewController.swift */; };
+		FD678B7024C06B1100B94216 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD678B6D24C06B1100B94216 /* SecondScreenViewController.swift */; };
+		FD678B7224C07ED000B94216 /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD678B7124C07ECF00B94216 /* ThirdScreenViewController.swift */; };
+		FD678B7324C07ED100B94216 /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD678B7124C07ECF00B94216 /* ThirdScreenViewController.swift */; };
+		FD678B7424C07ED100B94216 /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD678B7124C07ECF00B94216 /* ThirdScreenViewController.swift */; };
+		FD678B7624C07F0500B94216 /* FourthScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD678B7524C07F0500B94216 /* FourthScreenViewController.swift */; };
+		FD678B7724C07F0500B94216 /* FourthScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD678B7524C07F0500B94216 /* FourthScreenViewController.swift */; };
+		FD678B7824C07F0500B94216 /* FourthScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD678B7524C07F0500B94216 /* FourthScreenViewController.swift */; };
 		FDBF2BC824B78D7C00B175F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF2BC724B78D7C00B175F0 /* AppDelegate.swift */; };
-		FDBF2BCA24B78D7C00B175F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF2BC924B78D7C00B175F0 /* ViewController.swift */; };
+		FDBF2BCA24B78D7C00B175F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF2BC924B78D7C00B175F0 /* HomeViewController.swift */; };
 		FDBF2BCD24B78D7E00B175F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBF2BCB24B78D7E00B175F0 /* Main.storyboard */; };
 		FDBF2BCF24B78D7E00B175F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBF2BCE24B78D7E00B175F0 /* Assets.xcassets */; };
 		FDBF2BD224B78D7E00B175F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBF2BD024B78D7E00B175F0 /* LaunchScreen.storyboard */; };
@@ -34,9 +52,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD678B6124C05D4C00B94216 /* 3D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3D.png; sourceTree = "<group>"; };
+		FD678B6524C05D5500B94216 /* Design.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Design.png; sourceTree = "<group>"; };
+		FD678B6924C05DE600B94216 /* Print.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Print.png; sourceTree = "<group>"; };
+		FD678B6D24C06B1100B94216 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
+		FD678B7124C07ECF00B94216 /* ThirdScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenViewController.swift; sourceTree = "<group>"; };
+		FD678B7524C07F0500B94216 /* FourthScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthScreenViewController.swift; sourceTree = "<group>"; };
 		FDBF2BC424B78D7C00B175F0 /* RamaPrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RamaPrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBF2BC724B78D7C00B175F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDBF2BC924B78D7C00B175F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDBF2BC924B78D7C00B175F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FDBF2BCC24B78D7E00B175F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDBF2BCE24B78D7E00B175F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDBF2BD124B78D7E00B175F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,8 +122,14 @@
 			isa = PBXGroup;
 			children = (
 				FDBF2BC724B78D7C00B175F0 /* AppDelegate.swift */,
-				FDBF2BC924B78D7C00B175F0 /* ViewController.swift */,
+				FDBF2BC924B78D7C00B175F0 /* HomeViewController.swift */,
+				FD678B6D24C06B1100B94216 /* SecondScreenViewController.swift */,
+				FD678B7124C07ECF00B94216 /* ThirdScreenViewController.swift */,
+				FD678B7524C07F0500B94216 /* FourthScreenViewController.swift */,
 				FDBF2BCB24B78D7E00B175F0 /* Main.storyboard */,
+				FD678B6924C05DE600B94216 /* Print.png */,
+				FD678B6124C05D4C00B94216 /* 3D.png */,
+				FD678B6524C05D5500B94216 /* Design.png */,
 				FDBF2BCE24B78D7E00B175F0 /* Assets.xcassets */,
 				FDBF2BD024B78D7E00B175F0 /* LaunchScreen.storyboard */,
 				FDBF2BD324B78D7E00B175F0 /* Info.plist */,
@@ -232,7 +262,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD678B6224C05D4D00B94216 /* 3D.png in Resources */,
+				FD678B6624C05D5500B94216 /* Design.png in Resources */,
 				FDBF2BD224B78D7E00B175F0 /* LaunchScreen.storyboard in Resources */,
+				FD678B6A24C05DE600B94216 /* Print.png in Resources */,
 				FDBF2BCF24B78D7E00B175F0 /* Assets.xcassets in Resources */,
 				FDBF2BCD24B78D7E00B175F0 /* Main.storyboard in Resources */,
 			);
@@ -242,6 +275,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD678B6B24C05DE700B94216 /* Print.png in Resources */,
+				FD678B6324C05D4D00B94216 /* 3D.png in Resources */,
+				FD678B6724C05D5500B94216 /* Design.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +285,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD678B6C24C05DE700B94216 /* Print.png in Resources */,
+				FD678B6424C05D4D00B94216 /* 3D.png in Resources */,
+				FD678B6824C05D5500B94216 /* Design.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDBF2BCA24B78D7C00B175F0 /* ViewController.swift in Sources */,
+				FD678B7224C07ED000B94216 /* ThirdScreenViewController.swift in Sources */,
+				FD678B6E24C06B1100B94216 /* SecondScreenViewController.swift in Sources */,
+				FDBF2BCA24B78D7C00B175F0 /* HomeViewController.swift in Sources */,
 				FDBF2BC824B78D7C00B175F0 /* AppDelegate.swift in Sources */,
+				FD678B7624C07F0500B94216 /* FourthScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +310,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD678B7724C07F0500B94216 /* FourthScreenViewController.swift in Sources */,
+				FD678B6F24C06B1100B94216 /* SecondScreenViewController.swift in Sources */,
+				FD678B7324C07ED100B94216 /* ThirdScreenViewController.swift in Sources */,
 				FDBF2BDD24B78D7E00B175F0 /* RamaPrintTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD678B7824C07F0500B94216 /* FourthScreenViewController.swift in Sources */,
+				FD678B7024C06B1100B94216 /* SecondScreenViewController.swift in Sources */,
+				FD678B7424C07ED100B94216 /* ThirdScreenViewController.swift in Sources */,
 				FDBF2BE824B78D7E00B175F0 /* RamaPrintUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
