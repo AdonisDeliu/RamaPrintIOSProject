@@ -33,6 +33,7 @@
 		FDBF2BD224B78D7E00B175F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBF2BD024B78D7E00B175F0 /* LaunchScreen.storyboard */; };
 		FDBF2BDD24B78D7E00B175F0 /* RamaPrintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF2BDC24B78D7E00B175F0 /* RamaPrintTests.swift */; };
 		FDBF2BE824B78D7E00B175F0 /* RamaPrintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF2BE724B78D7E00B175F0 /* RamaPrintUITests.swift */; };
+		FDCC08FA24C48B8300A76B9A /* lokacion.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCC08F924C48B8200A76B9A /* lokacion.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		FDBF2BE324B78D7E00B175F0 /* RamaPrintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamaPrintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDBF2BE724B78D7E00B175F0 /* RamaPrintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamaPrintUITests.swift; sourceTree = "<group>"; };
 		FDBF2BE924B78D7F00B175F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDCC08F924C48B8200A76B9A /* lokacion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lokacion.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				FDBF2BCB24B78D7E00B175F0 /* Main.storyboard */,
 				FD0D6E3F24C26A500030B86B /* TableViewCell.swift */,
 				FD678B6924C05DE600B94216 /* Print.png */,
+				FDCC08F924C48B8200A76B9A /* lokacion.png */,
 				FD678B6124C05D4C00B94216 /* 3D.png */,
 				FD678B6524C05D5500B94216 /* Design.png */,
 				FDBF2BCE24B78D7E00B175F0 /* Assets.xcassets */,
@@ -268,6 +271,7 @@
 				FD678B6224C05D4D00B94216 /* 3D.png in Resources */,
 				FD678B6624C05D5500B94216 /* Design.png in Resources */,
 				FDBF2BD224B78D7E00B175F0 /* LaunchScreen.storyboard in Resources */,
+				FDCC08FA24C48B8300A76B9A /* lokacion.png in Resources */,
 				FD678B6A24C05DE600B94216 /* Print.png in Resources */,
 				FDBF2BCF24B78D7E00B175F0 /* Assets.xcassets in Resources */,
 				FDBF2BCD24B78D7E00B175F0 /* Main.storyboard in Resources */,
