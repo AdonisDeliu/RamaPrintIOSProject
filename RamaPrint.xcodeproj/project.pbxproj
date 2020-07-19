@@ -34,6 +34,7 @@
 		FDBF2BDD24B78D7E00B175F0 /* RamaPrintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF2BDC24B78D7E00B175F0 /* RamaPrintTests.swift */; };
 		FDBF2BE824B78D7E00B175F0 /* RamaPrintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF2BE724B78D7E00B175F0 /* RamaPrintUITests.swift */; };
 		FDCC08FA24C48B8300A76B9A /* lokacion.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCC08F924C48B8200A76B9A /* lokacion.png */; };
+		FDCC08FC24C4D70400A76B9A /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC08FB24C4D70400A76B9A /* DataCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		FDBF2BE724B78D7E00B175F0 /* RamaPrintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamaPrintUITests.swift; sourceTree = "<group>"; };
 		FDBF2BE924B78D7F00B175F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDCC08F924C48B8200A76B9A /* lokacion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lokacion.png; sourceTree = "<group>"; };
+		FDCC08FB24C4D70400A76B9A /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				FDBF2BCE24B78D7E00B175F0 /* Assets.xcassets */,
 				FDBF2BD024B78D7E00B175F0 /* LaunchScreen.storyboard */,
 				FDBF2BD324B78D7E00B175F0 /* Info.plist */,
+				FDCC08FB24C4D70400A76B9A /* DataCollectionViewCell.swift */,
 			);
 			path = RamaPrint;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				FDBF2BCA24B78D7C00B175F0 /* HomeViewController.swift in Sources */,
 				FD0D6E4024C26A500030B86B /* TableViewCell.swift in Sources */,
 				FDBF2BC824B78D7C00B175F0 /* AppDelegate.swift in Sources */,
+				FDCC08FC24C4D70400A76B9A /* DataCollectionViewCell.swift in Sources */,
 				FD678B7624C07F0500B94216 /* FourthScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

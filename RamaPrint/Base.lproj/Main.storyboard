@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -76,8 +77,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ramaprint-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="oSZ-1x-s5Q">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sY1-rR-jP6">
+                                <rect key="frame" x="0.0" y="161" width="375" height="617"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5KH-lF-F1e">
+                                    <size key="itemSize" width="375" height="245"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="mrd-Ad-rL3" customClass="DataCollectionViewCell" customModule="RamaPrint" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="245"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="245"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WZc-CU-FRT">
+                                                    <rect key="frame" x="40" y="10" width="295" height="170"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-ed-MJk">
+                                                    <rect key="frame" x="166" y="204" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="WZc-CU-FRT" firstAttribute="top" secondItem="mrd-Ad-rL3" secondAttribute="top" constant="10" id="2SD-QI-pAT"/>
+                                            <constraint firstItem="VmA-ed-MJk" firstAttribute="top" secondItem="WZc-CU-FRT" secondAttribute="bottom" constant="24" id="fPR-tQ-Dxf"/>
+                                            <constraint firstAttribute="trailing" secondItem="WZc-CU-FRT" secondAttribute="trailing" constant="40" id="iob-ej-odl"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="VmA-ed-MJk" secondAttribute="bottom" constant="12" id="rvH-6k-gRX"/>
+                                            <constraint firstItem="VmA-ed-MJk" firstAttribute="centerX" secondItem="WZc-CU-FRT" secondAttribute="centerX" id="x2D-3S-pJ2"/>
+                                            <constraint firstItem="WZc-CU-FRT" firstAttribute="leading" secondItem="mrd-Ad-rL3" secondAttribute="leading" constant="40" id="z2r-Hg-PTI"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="img" destination="WZc-CU-FRT" id="F9v-EM-xqC"/>
+                                            <outlet property="lbl" destination="VmA-ed-MJk" id="L1i-yE-Msf"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="hTB-BO-BdV" id="6rX-qL-XeH"/>
+                                    <outlet property="delegate" destination="hTB-BO-BdV" id="C9E-kV-OL8"/>
+                                </connections>
+                            </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1e-w5-Z0w">
-                                <rect key="frame" x="164" y="292" width="46" height="30"/>
+                                <rect key="frame" x="164" y="728" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -86,15 +138,22 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sY1-rR-jP6" firstAttribute="top" secondItem="lXY-E5-uTU" secondAttribute="top" constant="117" id="UXj-F9-6zt"/>
+                            <constraint firstItem="sY1-rR-jP6" firstAttribute="leading" secondItem="lXY-E5-uTU" secondAttribute="leading" id="Z42-xc-Yuo"/>
+                            <constraint firstItem="lXY-E5-uTU" firstAttribute="trailing" secondItem="sY1-rR-jP6" secondAttribute="trailing" id="p1J-cU-oq2"/>
+                            <constraint firstItem="sY1-rR-jP6" firstAttribute="bottom" secondItem="lXY-E5-uTU" secondAttribute="bottom" id="trl-HV-zeK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lXY-E5-uTU"/>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="sY1-rR-jP6" id="y8P-Op-LR8"/>
                         <segue destination="BYZ-38-t0r" kind="showDetail" identifier="HomeSegue4" id="FZB-BR-i7k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kvp-bu-ysK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1534" y="721"/>
+            <point key="canvasLocation" x="-1535.2" y="720.44334975369463"/>
         </scene>
         <!--Third Screen View Controller-->
         <scene sceneID="Mrc-jG-QnH">
@@ -104,20 +163,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKb-Dz-uyc">
-                                <rect key="frame" x="164" y="215" width="46" height="49"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ramaprint-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="wuN-jB-Tai">
+                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="C6O-2r-keT">
+                                <rect key="frame" x="162.66666666666666" y="642" width="50" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="H7I-go-ri0"/>
+                                    <constraint firstAttribute="width" constant="50" id="now-ao-4Dg"/>
+                                </constraints>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0s-GA-pP7">
+                                <rect key="frame" x="0.0" y="44" width="375" height="684"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfz-wE-x1r">
+                                <rect key="frame" x="164" y="736" width="46" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="BackButton2:" destination="pFU-mX-abZ" eventType="touchUpInside" id="Udy-b0-2RZ"/>
+                                    <action selector="backbutton2:" destination="pFU-mX-abZ" eventType="touchUpInside" id="uMA-04-IPf"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" identifier="HomeSegue3" id="cGE-XF-cTP"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wuN-jB-Tai" firstAttribute="leading" secondItem="NvI-xX-slL" secondAttribute="leading" id="C7f-TQ-tcl"/>
+                            <constraint firstItem="o0s-GA-pP7" firstAttribute="top" secondItem="NvI-xX-slL" secondAttribute="top" id="Ujs-Yn-V5k"/>
+                            <constraint firstItem="NvI-xX-slL" firstAttribute="bottom" secondItem="C6O-2r-keT" secondAttribute="bottom" constant="50" id="blC-5L-1ty"/>
+                            <constraint firstItem="NvI-xX-slL" firstAttribute="bottom" secondItem="wuN-jB-Tai" secondAttribute="bottom" id="cub-Ud-89R"/>
+                            <constraint firstAttribute="bottom" secondItem="o0s-GA-pP7" secondAttribute="bottom" constant="84" id="h7y-Ku-MjG"/>
+                            <constraint firstItem="NvI-xX-slL" firstAttribute="trailing" secondItem="wuN-jB-Tai" secondAttribute="trailing" id="iv8-SJ-g4C"/>
+                            <constraint firstItem="C6O-2r-keT" firstAttribute="centerX" secondItem="sQ9-g8-vKm" secondAttribute="centerX" id="mT4-Ko-oal"/>
+                            <constraint firstItem="o0s-GA-pP7" firstAttribute="trailing" secondItem="NvI-xX-slL" secondAttribute="trailing" id="qDF-B0-hXY"/>
+                            <constraint firstItem="wuN-jB-Tai" firstAttribute="top" secondItem="NvI-xX-slL" secondAttribute="top" id="vYg-Qq-MaP"/>
+                            <constraint firstItem="o0s-GA-pP7" firstAttribute="leading" secondItem="NvI-xX-slL" secondAttribute="leading" id="zgG-bJ-uU9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NvI-xX-slL"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="HomeSegue3" id="DZH-UY-e8w"/>
+                        <outlet property="pageControl" destination="C6O-2r-keT" id="Vyk-IX-0rl"/>
+                        <outlet property="scrollView" destination="o0s-GA-pP7" id="UjU-Xk-5Zz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhs-Fq-Msu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -240,6 +328,6 @@
         <image name="ramaprint-wallpaper" width="360" height="640"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="M0o-ud-mL9"/>
+        <segue reference="FZB-BR-i7k"/>
     </inferredMetricsTieBreakers>
 </document>
