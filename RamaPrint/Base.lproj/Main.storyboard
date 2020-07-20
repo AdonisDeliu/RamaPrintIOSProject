@@ -11,6 +11,70 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Five Screen View Controller-->
+        <scene sceneID="Hok-QD-ocC">
+            <objects>
+                <viewController storyboardIdentifier="FiveScreenViewController" id="3pi-yM-1z5" customClass="FiveScreenViewController" customModule="RamaPrint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8qp-x9-T4e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ramaprint-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="qFg-NJ-lse">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoa-PY-DJC">
+                                <rect key="frame" x="16" y="634" width="343" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="back.png"/>
+                                <connections>
+                                    <action selector="backButton5:" destination="3pi-yM-1z5" eventType="touchUpInside" id="2wq-3r-iwe"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" identifier="HomeSegue5" id="HUd-aN-GbG"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0QD-CP-YtM">
+                                <rect key="frame" x="43" y="247" width="277" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Rank" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oIt-yg-2jJ">
+                                <rect key="frame" x="43" y="302" width="277" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jv8-Sf-RcT">
+                                <rect key="frame" x="149" y="377" width="76" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.30177512764930725" green="0.69148731231689453" blue="0.93990814685821533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonSave:" destination="3pi-yM-1z5" eventType="touchUpInside" id="Pmt-Fb-qyW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qFg-NJ-lse" firstAttribute="top" secondItem="M4Z-sO-34o" secondAttribute="top" id="HDY-Us-TId"/>
+                            <constraint firstItem="M4Z-sO-34o" firstAttribute="bottom" secondItem="qFg-NJ-lse" secondAttribute="bottom" id="JSs-ah-cZZ"/>
+                            <constraint firstItem="M4Z-sO-34o" firstAttribute="trailing" secondItem="qFg-NJ-lse" secondAttribute="trailing" id="QUg-4h-ikg"/>
+                            <constraint firstItem="qFg-NJ-lse" firstAttribute="leading" secondItem="M4Z-sO-34o" secondAttribute="leading" id="aXg-Re-hTO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M4Z-sO-34o"/>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldName" destination="0QD-CP-YtM" id="j5O-m9-CqS"/>
+                        <outlet property="textFieldRanking" destination="oIt-yg-2jJ" id="gJH-yp-gFw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65w-cu-oFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2311.1999999999998" y="42.857142857142861"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -26,7 +90,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX2-Ii-Ilr">
                                 <rect key="frame" x="30" y="356" width="315" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="3D.png"/>
+                                <state key="normal" title="Button" image="ddd.png"/>
                                 <connections>
                                     <action selector="DButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="URv-fy-zF4"/>
                                 </connections>
@@ -34,7 +98,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtk-e9-jLY">
                                 <rect key="frame" x="30" y="504" width="315" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Print.png"/>
+                                <state key="normal" title="Button" image="print.png"/>
                                 <connections>
                                     <action selector="PrintButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MrP-ah-Opj"/>
                                 </connections>
@@ -42,17 +106,30 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bw-pO-K3I">
                                 <rect key="frame" x="30" y="207" width="315" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Design.png"/>
+                                <state key="normal" title="Button" image="design.png"/>
                                 <connections>
                                     <action selector="DesignButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8rk-rX-kJF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEb-Rh-SOz">
-                                <rect key="frame" x="156" y="642" width="62" height="58"/>
+                                <rect key="frame" x="76" y="672" width="40" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="lokacion.png"/>
                                 <connections>
                                     <action selector="location:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sgQ-eF-IxF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15d-Nv-3JU">
+                                <rect key="frame" x="164" y="670" width="128" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.79992920160293579" green="0.80004525184631348" blue="0.79990392923355103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="RATE US!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="MessageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wJK-mv-wwk"/>
+                                    <segue destination="3pi-yM-1z5" kind="showDetail" identifier="FiveSegue" id="7DP-4i-bko"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,10 +205,10 @@
                                     <outlet property="delegate" destination="hTB-BO-BdV" id="C9E-kV-OL8"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1e-w5-Z0w">
-                                <rect key="frame" x="164" y="728" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1e-w5-Z0w">
+                                <rect key="frame" x="16" y="654" width="343" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button" image="back.png"/>
                                 <connections>
                                     <action selector="BackButton3:" destination="hTB-BO-BdV" eventType="touchUpInside" id="OGw-gC-yyR"/>
                                 </connections>
@@ -174,12 +251,14 @@
                                 </constraints>
                             </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0s-GA-pP7">
-                                <rect key="frame" x="0.0" y="44" width="375" height="684"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="512"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfz-wE-x1r">
-                                <rect key="frame" x="164" y="736" width="46" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfz-wE-x1r">
+                                <rect key="frame" x="8" y="564" width="359" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9FY-qL-MMU"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="back.png"/>
                                 <connections>
                                     <action selector="backbutton2:" destination="pFU-mX-abZ" eventType="touchUpInside" id="uMA-04-IPf"/>
                                     <segue destination="BYZ-38-t0r" kind="showDetail" identifier="HomeSegue3" id="cGE-XF-cTP"/>
@@ -188,14 +267,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="NvI-xX-slL" firstAttribute="trailing" secondItem="Pfz-wE-x1r" secondAttribute="trailing" constant="8" id="4eI-pl-nvp"/>
                             <constraint firstItem="wuN-jB-Tai" firstAttribute="leading" secondItem="NvI-xX-slL" secondAttribute="leading" id="C7f-TQ-tcl"/>
+                            <constraint firstItem="NvI-xX-slL" firstAttribute="bottom" secondItem="Pfz-wE-x1r" secondAttribute="bottom" constant="85" id="TAm-pA-zjX"/>
                             <constraint firstItem="o0s-GA-pP7" firstAttribute="top" secondItem="NvI-xX-slL" secondAttribute="top" id="Ujs-Yn-V5k"/>
                             <constraint firstItem="NvI-xX-slL" firstAttribute="bottom" secondItem="C6O-2r-keT" secondAttribute="bottom" constant="50" id="blC-5L-1ty"/>
                             <constraint firstItem="NvI-xX-slL" firstAttribute="bottom" secondItem="wuN-jB-Tai" secondAttribute="bottom" id="cub-Ud-89R"/>
-                            <constraint firstAttribute="bottom" secondItem="o0s-GA-pP7" secondAttribute="bottom" constant="84" id="h7y-Ku-MjG"/>
                             <constraint firstItem="NvI-xX-slL" firstAttribute="trailing" secondItem="wuN-jB-Tai" secondAttribute="trailing" id="iv8-SJ-g4C"/>
                             <constraint firstItem="C6O-2r-keT" firstAttribute="centerX" secondItem="sQ9-g8-vKm" secondAttribute="centerX" id="mT4-Ko-oal"/>
+                            <constraint firstItem="Pfz-wE-x1r" firstAttribute="top" secondItem="o0s-GA-pP7" secondAttribute="bottom" constant="8" id="nRb-3N-KyR"/>
                             <constraint firstItem="o0s-GA-pP7" firstAttribute="trailing" secondItem="NvI-xX-slL" secondAttribute="trailing" id="qDF-B0-hXY"/>
+                            <constraint firstItem="Pfz-wE-x1r" firstAttribute="leading" secondItem="NvI-xX-slL" secondAttribute="leading" constant="8" id="s2d-7D-sj3"/>
                             <constraint firstItem="wuN-jB-Tai" firstAttribute="top" secondItem="NvI-xX-slL" secondAttribute="top" id="vYg-Qq-MaP"/>
                             <constraint firstItem="o0s-GA-pP7" firstAttribute="leading" secondItem="NvI-xX-slL" secondAttribute="leading" id="zgG-bJ-uU9"/>
                         </constraints>
@@ -227,12 +309,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="peW-fv-QFv">
                                 <rect key="frame" x="0.0" y="133" width="375" height="645"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2T4-NC-k5J">
-                                    <rect key="frame" x="0.0" y="132" width="375" height="40"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2T4-NC-k5J">
+                                    <rect key="frame" x="0.0" y="132" width="375" height="80"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.35283654928207397" green="0.74008733034133911" blue="0.61421114206314087" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                    <state key="normal" title="BACK"/>
+                                    <state key="normal" title="BACK" image="back.png"/>
                                     <connections>
                                         <action selector="BackButtonPress:" destination="DfU-zZ-LI6" eventType="touchUpInside" id="3Cg-hg-esz"/>
                                     </connections>
@@ -320,14 +401,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="3D.png" width="969" height="251"/>
         <image name="Design" width="970" height="251"/>
-        <image name="Design.png" width="970" height="251"/>
-        <image name="Print.png" width="970" height="251"/>
+        <image name="back.png" width="969" height="251"/>
+        <image name="ddd.png" width="966" height="250"/>
+        <image name="design.png" width="969" height="251"/>
         <image name="lokacion.png" width="231" height="291"/>
+        <image name="print.png" width="969" height="251"/>
         <image name="ramaprint-wallpaper" width="360" height="640"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FZB-BR-i7k"/>
+        <segue reference="HUd-aN-GbG"/>
     </inferredMetricsTieBreakers>
 </document>

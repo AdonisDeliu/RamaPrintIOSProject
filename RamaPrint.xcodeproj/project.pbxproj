@@ -7,16 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD075F8B24C61D9E00D20C21 /* ddd.png in Resources */ = {isa = PBXBuildFile; fileRef = FD075F8724C61D8E00D20C21 /* ddd.png */; };
+		FD075F8C24C61D9E00D20C21 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = FD075F8824C61D8F00D20C21 /* back.png */; };
+		FD075F8D24C61D9E00D20C21 /* print.png in Resources */ = {isa = PBXBuildFile; fileRef = FD075F8924C61D9600D20C21 /* print.png */; };
+		FD075F8E24C61D9E00D20C21 /* design.png in Resources */ = {isa = PBXBuildFile; fileRef = FD075F8A24C61D9C00D20C21 /* design.png */; };
 		FD0D6E4024C26A500030B86B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D6E3F24C26A500030B86B /* TableViewCell.swift */; };
-		FD678B6224C05D4D00B94216 /* 3D.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6124C05D4C00B94216 /* 3D.png */; };
-		FD678B6324C05D4D00B94216 /* 3D.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6124C05D4C00B94216 /* 3D.png */; };
-		FD678B6424C05D4D00B94216 /* 3D.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6124C05D4C00B94216 /* 3D.png */; };
-		FD678B6624C05D5500B94216 /* Design.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6524C05D5500B94216 /* Design.png */; };
-		FD678B6724C05D5500B94216 /* Design.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6524C05D5500B94216 /* Design.png */; };
-		FD678B6824C05D5500B94216 /* Design.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6524C05D5500B94216 /* Design.png */; };
-		FD678B6A24C05DE600B94216 /* Print.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6924C05DE600B94216 /* Print.png */; };
-		FD678B6B24C05DE700B94216 /* Print.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6924C05DE600B94216 /* Print.png */; };
-		FD678B6C24C05DE700B94216 /* Print.png in Resources */ = {isa = PBXBuildFile; fileRef = FD678B6924C05DE600B94216 /* Print.png */; };
 		FD678B6E24C06B1100B94216 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD678B6D24C06B1100B94216 /* SecondScreenViewController.swift */; };
 		FD678B6F24C06B1100B94216 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD678B6D24C06B1100B94216 /* SecondScreenViewController.swift */; };
 		FD678B7024C06B1100B94216 /* SecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD678B6D24C06B1100B94216 /* SecondScreenViewController.swift */; };
@@ -35,6 +30,7 @@
 		FDBF2BE824B78D7E00B175F0 /* RamaPrintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBF2BE724B78D7E00B175F0 /* RamaPrintUITests.swift */; };
 		FDCC08FA24C48B8300A76B9A /* lokacion.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCC08F924C48B8200A76B9A /* lokacion.png */; };
 		FDCC08FC24C4D70400A76B9A /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCC08FB24C4D70400A76B9A /* DataCollectionViewCell.swift */; };
+		FDFBE2E124C604B400C31BC0 /* FiveScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBE2E024C604B400C31BC0 /* FiveScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD075F8724C61D8E00D20C21 /* ddd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ddd.png; sourceTree = "<group>"; };
+		FD075F8824C61D8F00D20C21 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		FD075F8924C61D9600D20C21 /* print.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = print.png; sourceTree = "<group>"; };
+		FD075F8A24C61D9C00D20C21 /* design.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = design.png; sourceTree = "<group>"; };
 		FD0D6E3F24C26A500030B86B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		FD678B6124C05D4C00B94216 /* 3D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3D.png; sourceTree = "<group>"; };
-		FD678B6524C05D5500B94216 /* Design.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Design.png; sourceTree = "<group>"; };
-		FD678B6924C05DE600B94216 /* Print.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Print.png; sourceTree = "<group>"; };
 		FD678B6D24C06B1100B94216 /* SecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenViewController.swift; sourceTree = "<group>"; };
 		FD678B7124C07ECF00B94216 /* ThirdScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenViewController.swift; sourceTree = "<group>"; };
 		FD678B7524C07F0500B94216 /* FourthScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthScreenViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +74,7 @@
 		FDBF2BE924B78D7F00B175F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDCC08F924C48B8200A76B9A /* lokacion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lokacion.png; sourceTree = "<group>"; };
 		FDCC08FB24C4D70400A76B9A /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		FDFBE2E024C604B400C31BC0 /* FiveScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,12 +130,14 @@
 				FD678B6D24C06B1100B94216 /* SecondScreenViewController.swift */,
 				FD678B7124C07ECF00B94216 /* ThirdScreenViewController.swift */,
 				FD678B7524C07F0500B94216 /* FourthScreenViewController.swift */,
+				FDFBE2E024C604B400C31BC0 /* FiveScreenViewController.swift */,
 				FDBF2BCB24B78D7E00B175F0 /* Main.storyboard */,
 				FD0D6E3F24C26A500030B86B /* TableViewCell.swift */,
-				FD678B6924C05DE600B94216 /* Print.png */,
+				FD075F8824C61D8F00D20C21 /* back.png */,
+				FD075F8724C61D8E00D20C21 /* ddd.png */,
+				FD075F8A24C61D9C00D20C21 /* design.png */,
+				FD075F8924C61D9600D20C21 /* print.png */,
 				FDCC08F924C48B8200A76B9A /* lokacion.png */,
-				FD678B6124C05D4C00B94216 /* 3D.png */,
-				FD678B6524C05D5500B94216 /* Design.png */,
 				FDBF2BCE24B78D7E00B175F0 /* Assets.xcassets */,
 				FDBF2BD024B78D7E00B175F0 /* LaunchScreen.storyboard */,
 				FDBF2BD324B78D7E00B175F0 /* Info.plist */,
@@ -271,13 +271,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD678B6224C05D4D00B94216 /* 3D.png in Resources */,
-				FD678B6624C05D5500B94216 /* Design.png in Resources */,
 				FDBF2BD224B78D7E00B175F0 /* LaunchScreen.storyboard in Resources */,
+				FD075F8B24C61D9E00D20C21 /* ddd.png in Resources */,
+				FD075F8C24C61D9E00D20C21 /* back.png in Resources */,
+				FD075F8D24C61D9E00D20C21 /* print.png in Resources */,
 				FDCC08FA24C48B8300A76B9A /* lokacion.png in Resources */,
-				FD678B6A24C05DE600B94216 /* Print.png in Resources */,
 				FDBF2BCF24B78D7E00B175F0 /* Assets.xcassets in Resources */,
 				FDBF2BCD24B78D7E00B175F0 /* Main.storyboard in Resources */,
+				FD075F8E24C61D9E00D20C21 /* design.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,9 +286,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD678B6B24C05DE700B94216 /* Print.png in Resources */,
-				FD678B6324C05D4D00B94216 /* 3D.png in Resources */,
-				FD678B6724C05D5500B94216 /* Design.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,9 +293,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD678B6C24C05DE700B94216 /* Print.png in Resources */,
-				FD678B6424C05D4D00B94216 /* 3D.png in Resources */,
-				FD678B6824C05D5500B94216 /* Design.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +305,7 @@
 			files = (
 				FD678B7224C07ED000B94216 /* ThirdScreenViewController.swift in Sources */,
 				FD678B6E24C06B1100B94216 /* SecondScreenViewController.swift in Sources */,
+				FDFBE2E124C604B400C31BC0 /* FiveScreenViewController.swift in Sources */,
 				FDBF2BCA24B78D7C00B175F0 /* HomeViewController.swift in Sources */,
 				FD0D6E4024C26A500030B86B /* TableViewCell.swift in Sources */,
 				FDBF2BC824B78D7C00B175F0 /* AppDelegate.swift in Sources */,

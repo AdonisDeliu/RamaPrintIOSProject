@@ -21,6 +21,9 @@ class HomeViewController: UIViewController {
     @IBAction func PrintButton(_ sender: Any) {
         self.performSegue(withIdentifier: "FourthSegue", sender: self)
     }
+    @IBAction func MessageButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "FiveSegue", sender: self)
+    }
     @IBAction func location(_ sender: Any) {
         
         let alert = UIAlertController(title: "We're sorry!", message: "We are working on that and will be able soon!", preferredStyle: .alert)
